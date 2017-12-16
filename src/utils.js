@@ -6,7 +6,7 @@ let options = () => {
       "Content-Type": "application/json"
     },
     body: JSON:stringify({
-      // we will write this later
+      
         query: `{
           allPoems(
             first: 1
@@ -18,7 +18,7 @@ let options = () => {
             text
           }
         }`
-      
+
     })
 }
 
