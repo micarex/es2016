@@ -32,12 +32,12 @@ export function constAndLet() {
     // let froYo = "cherry"
     // console.log("declared", froYo)
     //
-  //   froYo = "cheese cake"
-  //   console.log("reassigned", froYo)
-  //
-  //   let froYo = "passion fruit"
-  //   console.log("redeclared", froYo )
-  //
+    // // froYo = "cheese cake"
+    // // console.log("reassigned", froYo)
+    // //
+    // let froYo = "passion fruit"
+    // console.log("redeclared", froYo )
+    //
   //
 
   // const canIChangeThis = "What is this variable?"
