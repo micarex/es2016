@@ -8,11 +8,11 @@ export function spreadOperator(){
   //
   //
   // console.log(superSecretSauce)
-
-  // //technically this is not yet allowed for objects
-  // //but you can do it in create react app
   //
-
+  // // //technically this is not yet allowed for objects
+  // // //but you can do it in create react app
+  // //
+  //
   // const favoriteToppings = {    //the object we will spread
   //   peanutButter: 'crunchy',
   //   jelly: 'strawberry'  //it has two key-value pairs
@@ -22,7 +22,7 @@ export function spreadOperator(){
   //   breadSlices: 2,   // of condiments to this new object
   //   ...favoriteToppings    //by using an elipsis
   // }
-
+  //
   // console.log('sandwich = ', sandwich)
   // /*
   //     sandwich = {
@@ -31,12 +31,12 @@ export function spreadOperator(){
   //       jelly: 'strawberry'
   //     }
   //  */
-  //
+  // //
   //  //you can also do
   //
   // const sameSandwich = Object.assign({breadSlices: 2}, favoriteToppings)
   //
   // console.log('sameSandwich = ', sameSandwich)
-  //
+
 
 }
