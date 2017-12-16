@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import {Markup, Editor, Container, Column, Row, RuleInput, RuleLabel, StyleInput, Button, Document} from './styled'
+import hlsjs from 'highlight.js'
 
 class App extends Component {
 
@@ -78,9 +79,16 @@ class App extends Component {
   }
 
 
+convertToMarkup = (text) => {
+  return {
+    __html: hlsjs.highlightAuto(text).value
+  }
+
+}
+
   render() {
-    let {value} = this.state
-    let {handleChange, newFields, rules} = this
+    let {editor} = this.state
+    let {handleChange, newFields, rules, convertToMarkup} = this
     return (
       <Container>
         <Column>
@@ -98,10 +106,13 @@ class App extends Component {
           <Document>
             <Editor
               name={"Editor"}
-              value={value}
+              value={editor}
               onChange={handleChange}
             />
-            <Markup/>
+            <Markup
+              dangerouslySetInnerHTML={convertToMarkup(editor)}
+
+            />
           </Document>
         </Column>
       </Container>
